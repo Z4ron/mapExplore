@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sidebar{
+	width: 200px;
+	height: 100%;
+	color: white;
+	background-color: rgba(5, 5, 5, 0.82);
+	position:fixed;
+    left:0px;
+    top:0px;
+}
+
+.sidebar h4{
+	text-align: center;
+}
+
+.editModeLabel{
+	position: absolute;
+	left: 5%;
+	top: 50%;
+}
+
+.mapTitle{
+	position: absolute;
+	left: 5%;
+	top: 10%;
+}
+
+.changeMapButton{
+	position: absolute;
+	left: 5%;
+	top: 15%;
+	color: black;
+}
+
+.username{
+	position: absolute;
+	left: 5%;
+	top: 25%;
+}
+
+.changeUserButton{
+	position: absolute;
+	left: 5%;
+	top: 30%;
+	color: black;
+}
+
+.mapArea{
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    left:200px;
+	width: fill;
+	height: 100%;
+	background-size: 100% 100%;
+}
+
+.locationButton{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	background-color: transparent;
+	border: solid;
+	border-color: black;
+}
+
+.infoPanel{
+	position: relative;
+	height: 100%;
+	background-color:rgba(0, 0, 0, 0.7);
+	width: 100%;
+	visibility: hidden;
+}
+
+.infoPanel .btn-success{
+	position: absolute;
+	top: 90%;
+	left: 36%;
+	color: black;
+	width: 10%;
+}
+
+.infoPanel .btn-info{
+	position: absolute;
+	top: 90%;
+	left: 49%;
+	color: black;
+	width: 10%;
+}
+
+.infoPanel .btn-danger{
+	position: absolute;
+	top: 90%;
+	left: 62%;
+	color: black;
+	width: 10%;
+}
+
+.infoTitle{
+	width: 50%;
+	position: relative;
+	top:5%;
+	left: 25%;
+	border: solid;
+	border-radius: 10px;
+	border-color: orange;
+	color: white;
+	text-align: center;
+	z-index: 1; /* prevents buttons in background from being clickable */
+}
+
+.infoContent{
+	width: 75%;
+	height: 50%;
+	position: relative;
+	top:15%;
+	left: 12.5%;
+	border: solid;
+	border-color: orange;
+	color: white;
+	overflow-y: scroll;
+	z-index: 1; /* prevents buttons in background from being clickable */
+}
+
+/* Take off outline of selected text area and buttons */
+.infoTitle:focus,
+.infoContent:focus,
+.btn:focus {
+    outline: none;
+}
